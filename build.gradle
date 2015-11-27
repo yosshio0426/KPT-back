@@ -1,0 +1,24 @@
+allprojects {
+
+    apply plugin:'java'
+    apply plugin: 'maven'
+
+    group = 'net.yosshio0426'
+    version = '0.0.1-SNAPSHOT'
+
+    uploadArchives {
+        repositories {
+            mavenDeployer {
+                repository(url: "file://${rootProject.projectDir}/repo")
+            }
+        }
+    }
+}
+
+clean {
+    delete "repo"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.8'
+}
