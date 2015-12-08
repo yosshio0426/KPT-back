@@ -11,6 +11,11 @@ import net.yosshio0426.kpt.core.value.Title;
 public interface Problem {
 
     /**
+     * @return 識別子
+     */
+    ProblemId id();
+
+    /**
      * @return 課題のタイトル
      */
     Title title();

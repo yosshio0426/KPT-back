@@ -2,6 +2,7 @@ package net.yosshio0426.kpt.core.action;
 
 import net.yosshio0426.kpt.core.action.GivenUp;
 import net.yosshio0426.kpt.core.action.Keep;
+import net.yosshio0426.kpt.core.problem.ProblemId;
 import net.yosshio0426.kpt.core.value.Description;
 import net.yosshio0426.kpt.core.value.Title;
 
@@ -9,6 +10,11 @@ import net.yosshio0426.kpt.core.value.Title;
  * 取り組み.
  */
 public interface Action {
+
+    /**
+     * @return 識別子
+     */
+    ActionId id();
 
     /**
      * @return 取り組みの名前
