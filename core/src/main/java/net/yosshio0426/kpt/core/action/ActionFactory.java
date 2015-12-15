@@ -22,5 +22,5 @@ public interface ActionFactory {
      * @param description 詳細説明
      * @return 今後試してみること
      */
-    Keep newTry(Title title, Description description);
+    Try newTry(Title title, Description description);
 }
