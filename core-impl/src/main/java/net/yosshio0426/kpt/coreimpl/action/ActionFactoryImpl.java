@@ -8,11 +8,14 @@ import net.yosshio0426.kpt.core.value.Description;
 import net.yosshio0426.kpt.core.value.Title;
 
 /**
- * .
+ * ActionFactoryの実装.
  */
 @RequiredArgsConstructor
 public class ActionFactoryImpl implements ActionFactory {
 
+    /**
+     * IDを生成する.
+     */
     private final UniqueActionIdGenerator idGenerator;
 
     @Override
